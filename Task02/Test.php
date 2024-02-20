@@ -1,4 +1,5 @@
 <?php
+
 function runTest(){
     // String representation test
     $v1 = new \Sherstnev\Task02\Vector(1, 2, 3);
