@@ -4,15 +4,19 @@ namespace Sherstnev\Task02;
 
 class Vector
 {
-    public int $x;
-    public int $y;
-    public int $z;
+    private int $x;
+    private int $y;
+    private int $z;
 
     public function __construct(int $x, int $y, int $z)
     {
-        $this->x = $x;
-        $this->y = $y;
-        $this->z = $z;
+        if (is_numeric($x) && is_numeric($y) && is_numeric($z)) {
+            $this->x = $x;
+            $this->y = $y;
+            $this->z = $z;
+        } else {
+            exit('Координаты должны быть числами.');
+        }
     }
 
     public function add(Vector $vector): Vector

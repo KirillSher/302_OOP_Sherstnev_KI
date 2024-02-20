@@ -34,5 +34,3 @@ function runTest(){
     echo "Ожидается: (-14; 5; -2)" . PHP_EOL;
     echo "Получено: " . $v8 . PHP_EOL;
 }
-
-?>
